@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+android:layout_margin="8dp"
+app:cardBackgroundColor="@color/white"
+app:cardCornerRadius="4dp"
+android:elevation="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                                                           android:layout_height="wrap_content"
+                                                           app:layout_constraintStart_toStartOf="parent"
+                                                           android:layout_marginStart="16dp"
+                                                           app:layout_constraintTop_toTopOf="parent"
+                                                           android:id="@+id/constraintLayout5"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Subject name here"
+                      android:textColor="@color/colorPrimaryDark"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="8dp" android:textSize="16sp" android:id="@+id/subject_tv"
+                      android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Need to attend next 2 lectures"
+                      android:textColor="@color/shadow"
+                      app:layout_constraintStart_toStartOf="parent"
+                      android:layout_marginStart="8dp"
+                      android:id="@+id/compensation_tv"
+                      android:layout_marginBottom="8dp"
+                      app:layout_constraintTop_toBottomOf="@+id/subject_tv" android:textSize="12sp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/from_time"
+                  android:text="8:00 AM"
+                  android:textColor="@color/colorPrimaryDark" android:layout_marginEnd="8dp"
+                  app:layout_constraintEnd_toStartOf="@+id/textView8" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/view" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="to"
+                  android:textColor="@color/shadow" app:layout_constraintEnd_toStartOf="@+id/to_time"
+                  android:layout_marginEnd="8dp" android:id="@+id/textView8" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/view" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toTopOf="parent"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/to_time"
+                  android:text="9:20 AM"
+                  android:textColor="@color/colorPrimaryDark" android:layout_marginEnd="24dp"
+                  app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toTopOf="@+id/view"/>
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="75.00"
+                  android:id="@+id/subject_percentage_tv"
+                  android:padding="4dp"
+                  android:textStyle="bold"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="18sp"
+                  app:layout_constraintStart_toEndOf="@+id/cancel_cons" app:layout_constraintHorizontal_bias="0.5"
+                  app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" android:layout_marginBottom="8dp"
+                  app:layout_constraintBottom_toBottomOf="parent"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+              android:background="@color/shadow" app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.0"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp" android:id="@+id/view"
+              app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"/>
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:id="@+id/present_cons"
+                                           app:cardCornerRadius="20dp"
+                                           app:cardBackgroundColor="@color/white"
+                                           app:layout_constraintStart_toStartOf="parent"
+                                           app:layout_constraintHorizontal_bias="0.5"
+                                           app:layout_constraintEnd_toStartOf="@+id/absent_cons"
+                                           app:layout_constraintBottom_toBottomOf="@+id/absent_cons">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                                                               android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Present"
+                          android:textColor="@color/shadow"
+                          android:id="@+id/present_tv"
+                          app:layout_constraintStart_toEndOf="@+id/imageView8"
+                          android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                          app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                          app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="10dp"
+                          app:layout_constraintEnd_toEndOf="parent" android:textSize="10sp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:src="@drawable/ic_present" android:id="@+id/imageView8"
+                           android:layout_marginTop="8dp"
+                           app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                           app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                           android:layout_marginStart="8dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:id="@+id/absent_cons"
+                                           app:cardBackgroundColor="@color/white"
+                                           app:cardCornerRadius="20dp"
+                                           app:layout_constraintStart_toEndOf="@+id/present_cons"
+                                           app:layout_constraintHorizontal_bias="0.5"
+                                           app:layout_constraintEnd_toStartOf="@+id/cancel_cons"
+                                           android:layout_marginTop="8dp"
+                                           app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+                                           android:layout_marginBottom="8dp"
+                                           app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                                                               android:layout_height="wrap_content"
+            >
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Absent"
+                          android:textColor="@color/shadow"
+                          android:id="@+id/absent_tv"
+                          app:layout_constraintStart_toEndOf="@+id/absent_img"
+                          android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                          app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                          app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="10dp"
+                          app:layout_constraintEnd_toEndOf="parent" android:textSize="10sp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:src="@drawable/ic_absent" android:id="@+id/absent_img"
+                           android:layout_marginTop="8dp"
+                           app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                           app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                           android:layout_marginStart="8dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:id="@+id/cancel_cons"
+                                           app:cardCornerRadius="20dp"
+                                           app:cardBackgroundColor="@color/white"
+                                           app:layout_constraintStart_toEndOf="@+id/absent_cons"
+                                           app:layout_constraintHorizontal_bias="0.5"
+                                           app:layout_constraintEnd_toStartOf="@+id/subject_percentage_tv"
+                                           app:layout_constraintTop_toTopOf="@+id/absent_cons"
+                                           app:layout_constraintBottom_toBottomOf="@+id/absent_cons">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                                                               android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="Cancelled"
+                          android:textColor="@color/shadow"
+                          android:id="@+id/cancel_tv"
+                          app:layout_constraintStart_toEndOf="@+id/cancel_img"
+                          android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                          app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                          app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="10dp"
+                          app:layout_constraintEnd_toEndOf="parent" android:textSize="10sp"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                           android:src="@drawable/ic_cancel" android:id="@+id/cancel_img"
+                           android:layout_marginTop="8dp"
+                           app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                           app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                           android:layout_marginStart="8dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

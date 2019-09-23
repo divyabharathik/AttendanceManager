@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078607722349",
+    "firebase_url": "https://attendancemanager-f6fbe.firebaseio.com",
+    "project_id": "attendancemanager-f6fbe",
+    "storage_bucket": "attendancemanager-f6fbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078607722349:android:be5581ee38680fe3",
+        "android_client_info": {
+          "package_name": "divya.com.attendancemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078607722349-9atcsa34m6baqbc9st6slf20bs5ls9vu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "divya.com.attendancemanager",
+            "certificate_hash": "4f19aca275b57bca7b5511bfe5d71e8a1c4d3e2a"
+          }
+        },
+        {
+          "client_id": "1078607722349-kcmriu73l5fnei3arrdukmf0i4t6drd2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvS-6Pc6AzSUKEce-clVRYyzOIviQI8ZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078607722349-kcmriu73l5fnei3arrdukmf0i4t6drd2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
